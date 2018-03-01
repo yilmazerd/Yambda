@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        final Button buttonA = (Button) findViewById(R.id.buttonUI_A);
-        final Button buttonB = (Button) findViewById(R.id.buttonUI_B);
-        final Button buttonC = (Button) findViewById(R.id.buttonUI_C);
-        final Button buttonD = (Button) findViewById(R.id.buttonUI_D);
-        final Button buttonE = (Button) findViewById(R.id.buttonUI_E);
-        final Button buttonOK = (Button) findViewById(R.id.buttonOK);
+        final Button buttonA =  findViewById(R.id.buttonUI_A);
+        final Button buttonB =  findViewById(R.id.buttonUI_B);
+        final Button buttonC =  findViewById(R.id.buttonUI_C);
+        final Button buttonD =  findViewById(R.id.buttonUI_D);
+        final Button buttonE =  findViewById(R.id.buttonUI_E);
+        final Button buttonOK = findViewById(R.id.buttonOK);
 
         buttonOK.setVisibility(View.INVISIBLE);
 
@@ -105,15 +105,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setQuestionText(String sss){
-        final TextView questionText = (TextView) findViewById(R.id.textView2);
+        final TextView questionText = findViewById(R.id.textView2);
         questionText.setText(sss);
     }
     private void makeAllButtonsInvisible() {
-        final Button buttonA = (Button) findViewById(R.id.buttonUI_A);
-        final Button buttonB = (Button) findViewById(R.id.buttonUI_B);
-        final Button buttonC = (Button) findViewById(R.id.buttonUI_C);
-        final Button buttonD = (Button) findViewById(R.id.buttonUI_D);
-        final Button buttonE = (Button) findViewById(R.id.buttonUI_E);
+        final Button buttonA = findViewById(R.id.buttonUI_A);
+        final Button buttonB = findViewById(R.id.buttonUI_B);
+        final Button buttonC = findViewById(R.id.buttonUI_C);
+        final Button buttonD = findViewById(R.id.buttonUI_D);
+        final Button buttonE = findViewById(R.id.buttonUI_E);
 
         buttonA.setVisibility(View.INVISIBLE);
         buttonB.setVisibility(View.INVISIBLE);
@@ -123,12 +123,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setButtonsFalse(int optButton) {
-        final Button buttonA = (Button) findViewById(R.id.buttonUI_A);
-        final Button buttonB = (Button) findViewById(R.id.buttonUI_B);
-        final Button buttonC = (Button) findViewById(R.id.buttonUI_C);
-        final Button buttonD = (Button) findViewById(R.id.buttonUI_D);
-        final Button buttonE = (Button) findViewById(R.id.buttonUI_E);
-        final Button buttonOK = (Button) findViewById(R.id.buttonOK);
+        final Button buttonA =  findViewById(R.id.buttonUI_A);
+        final Button buttonB =  findViewById(R.id.buttonUI_B);
+        final Button buttonC =  findViewById(R.id.buttonUI_C);
+        final Button buttonD =  findViewById(R.id.buttonUI_D);
+        final Button buttonE =  findViewById(R.id.buttonUI_E);
+        final Button buttonOK =  findViewById(R.id.buttonOK);
 
         buttonOK.setVisibility(View.VISIBLE);
 
@@ -157,13 +157,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setQuestionAndAnswers(String question, String answerA, String answerB, String answerC, String answerD, String answerE ) {
-        final Button buttonA = (Button) findViewById(R.id.buttonUI_A);
-        final Button buttonB = (Button) findViewById(R.id.buttonUI_B);
-        final Button buttonC = (Button) findViewById(R.id.buttonUI_C);
-        final Button buttonD = (Button) findViewById(R.id.buttonUI_D);
-        final Button buttonE = (Button) findViewById(R.id.buttonUI_E);
-        final Button buttonOK = (Button) findViewById(R.id.buttonOK);
-        final TextView questionText = (TextView) findViewById(R.id.textView2);
+        final Button buttonA =  findViewById(R.id.buttonUI_A);
+        final Button buttonB =  findViewById(R.id.buttonUI_B);
+        final Button buttonC =  findViewById(R.id.buttonUI_C);
+        final Button buttonD =  findViewById(R.id.buttonUI_D);
+        final Button buttonE =  findViewById(R.id.buttonUI_E);
+        final Button buttonOK =  findViewById(R.id.buttonOK);
+        final TextView questionText =   findViewById(R.id.textView2);
 
         questionText.setText(question);
         buttonA.setText(answerA);
@@ -219,13 +219,15 @@ public class MainActivity extends AppCompatActivity {
             } break;
         }
 
+
+
         setQuestionAndAnswers(question, answerA, answerB, answerC, answerD, answerE);
     }
 
     private void loadQADatabase(int qaID) {
         Log.d("TAG--", String.valueOf(qaID));
         String question, answerA, answerB, answerC, answerD, answerE;
-        String[] SS = new String[6];
+        String[] SS;
         qp = quizForThisPage.QDB.QL.get(qaID);
         Log.d("TAG--",String.valueOf(quizForThisPage.QDB.QL.size()));
         SS = qp.getQuiz();
