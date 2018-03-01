@@ -14,6 +14,13 @@ public class QuizAfterSurgery {
     private String[][] quizDatabase() {
         String[][] DB = new String[numOfQuestions][6];
 
+        // SET empty
+        for (int i=0; i<numOfQuestions;i++) {
+            for (int j=0; j<6;j++){
+                DB[i][j]="notValid";
+            }
+        }
+
         DB[0][0] = "Ways to decrease your chances of an infection after surgery include";
         DB[0][1] = "A- Keeping a good diet as recommended by your doctor,nurse, and nutritionist";
         DB[0][2] = "B- Taking all your medications as prescribed";
@@ -26,36 +33,24 @@ public class QuizAfterSurgery {
         DB[1][2] = "B- Having a stomach ache";
         DB[1][3] = "C- Having bacteria invade some of your body’s tissues (for example, an area of skin)";
         DB[1][4] = "D- Having a cough";
-        DB[1][5] = "E- ";
 
-        DB[2][0] = "This is q3";
-        DB[2][1] = "A1-1";
-        DB[2][2] = "A1";
-        DB[2][3] = "A1";
-        DB[2][4] = "A1";
-        DB[2][5] = "A1";
+        DB[2][0] = "It's possible to completely elimnate risk of infection after a surgery";
+        DB[2][1] = "TRUE";
+        DB[2][2] = "FALSE";
 
-        DB[3][0] = "This is q4";
-        DB[3][1] = "A1-1";
-        DB[3][2] = "A1";
-        DB[3][3] = "A1";
-        DB[3][4] = "A1";
-        DB[3][5] = "A1";
+        DB[3][0] = "Good nutrition after surgery is important for healing after your surgery\n";
+        DB[3][1] = "TRUE";
+        DB[3][2] = "FALSE";
 
-        DB[4][0] = "This is q5";
-        DB[4][1] = "A1-1";
-        DB[4][2] = "A1";
-        DB[4][3] = "A1";
-        DB[4][4] = "A1";
-        DB[4][5] = "A1";
+        DB[4][0] = "Stomach problems after surgery are common because of anesthesia";
+        DB[4][1] = "TRUE";
+        DB[4][2] = "FALSE";
 
 
-        DB[5][0] = "This is q6";
-        DB[5][1] = "A1-1";
-        DB[5][2] = "A1";
-        DB[5][3] = "A1";
-        DB[5][4] = "A1";
-        DB[5][5] = "A1";
+        DB[5][0] = "Stomach problems usually go away soon after surgery";
+        DB[5][1] = "TRUE";
+        DB[5][2] = "FALSE";
+
 
         DB[6][0] = "This is q7";
         DB[6][1] = "A1-1";

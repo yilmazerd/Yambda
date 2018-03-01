@@ -162,7 +162,6 @@ public class MainActivity extends AppCompatActivity {
         final Button buttonC =  findViewById(R.id.buttonUI_C);
         final Button buttonD =  findViewById(R.id.buttonUI_D);
         final Button buttonE =  findViewById(R.id.buttonUI_E);
-        final Button buttonOK =  findViewById(R.id.buttonOK);
         final TextView questionText =   findViewById(R.id.textView2);
 
         questionText.setText(question);
@@ -172,56 +171,11 @@ public class MainActivity extends AppCompatActivity {
         buttonD.setText(answerD);
         buttonE.setText(answerE);
 
-
-    }
-
-    private void loadQADatabase(int qaID,int a) {
-        String question, answerA, answerB, answerC, answerD, answerE;
-        switch (qaID) {
-            case 1: {
-                question = "This is the first question";
-                answerA = "This is answer A for the first question";
-                answerB = "This is answer B for the first question";
-                answerC = "This is answer C for the first question";
-                answerD = "This is answer D for the first question";
-                answerE = "This is answer E for the first question";
-
-            } break;
-
-            case 2: {
-                question = "This is the SECOND question";
-                answerA = "This is answer A for the SECOND question";
-                answerB = "This is answer B for the SECOND question";
-                answerC = "This is answer C for the SECOND question";
-                answerD = "This is answer D for the SECOND question";
-                answerE = "This is answer E for the SECOND question";
-
-            } break;
-
-            case 3: {
-                question = "This is the THIRD question";
-                answerA = "This is answer A for the THIRD question";
-                answerB = "This is answer B for the THIRD question";
-                answerC = "This is answer C for the THIRD question";
-                answerD = "This is answer D for the THIRD question";
-                answerE = "This is answer E for the THIRD question";
-
-            } break;
-
-            default: {
-                question = "Q";
-                answerA = "A1";
-                answerB = "A2";
-                answerC = "A3";
-                answerD = "A4";
-                answerE = "A5";
-
-            } break;
-        }
+        if (answerC=="notValid") {buttonC.setVisibility(View.INVISIBLE);}
+        if (answerD=="notValid") {buttonD.setVisibility(View.INVISIBLE);}
+        if (answerE=="notValid") {buttonE.setVisibility(View.INVISIBLE);}
 
 
-
-        setQuestionAndAnswers(question, answerA, answerB, answerC, answerD, answerE);
     }
 
     private void loadQADatabase(int qaID) {
@@ -233,7 +187,6 @@ public class MainActivity extends AppCompatActivity {
         SS = qp.getQuiz();
         Log.d("TAG--",SS[0]);
         setQuestionAndAnswers(SS[0], SS[1], SS[2], SS[3], SS[4], SS[5]);
-
     }
 
 
