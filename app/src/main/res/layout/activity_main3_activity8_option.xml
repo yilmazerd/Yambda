@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.erdemyilmaz.yambda.Main3Activity8Option">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/flw"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="179dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WHAT IS YOUR AGE?"
+                android:textStyle="bold"
+                android:theme="@style/QuestionText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/buttonUI_A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/mybutton"
+                        android:padding="10dp"
+                        android:paddingLeft="100dp"
+                        android:text="35-45"
+                        android:textAlignment="viewStart"
+                        android:textColor="#ffffff"
+                        android:theme="@style/CKButton2" />
+
+                    <Button
+                        android:id="@+id/buttonUI_B"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/mybutton"
+                        android:padding="10dp"
+                        android:paddingLeft="100dp"
+                        android:text="45-55"
+                        android:textAlignment="viewStart"
+                        android:textColor="#ffffff"
+                        android:theme="@style/CKButton2" />
+
+                    <Button
+                        android:id="@+id/buttonUI_C"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/mybutton"
+                        android:padding="10dp"
+                        android:paddingLeft="100dp"
+                        android:text="55-65"
+                        android:textAlignment="viewStart"
+                        android:textColor="#ffffff"
+                        android:theme="@style/CKButton2" />
+
+                    <Button
+                        android:id="@+id/buttonUI_D"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/mybutton"
+                        android:padding="10dp"
+                        android:paddingLeft="100dp"
+                        android:text="65-75"
+                        android:textAlignment="viewStart"
+                        android:textColor="#ffffff"
+                        android:theme="@style/CKButton2" />
+
+                    <Button
+                        android:id="@+id/buttonUI_E"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/mybutton"
+                        android:padding="10dp"
+                        android:paddingLeft="100dp"
+                        android:text="75-85"
+                        android:textAlignment="viewStart"
+                        android:textColor="#ffffff"
+                        android:theme="@style/CKButton2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/buttonUI_A3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/mybutton"
+                        android:padding="10dp"
+                        android:paddingLeft="100dp"
+                        android:text="85 AND ABOVE"
+                        android:textAlignment="viewStart"
+                        android:textColor="#ffffff"
+                        android:theme="@style/CKButton2" />
+
+                    <Button
+                        android:id="@+id/buttonUI_B3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/mybutton"
+                        android:padding="10dp"
+                        android:paddingLeft="100dp"
+                        android:text="IDLE"
+                        android:textAlignment="viewStart"
+                        android:textColor="#ffffff"
+                        android:theme="@style/CKButton2" />
+
+                    <Button
+                        android:id="@+id/buttonUI_C3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/mybutton"
+                        android:padding="10dp"
+                        android:paddingLeft="100dp"
+                        android:text="IDLE"
+                        android:textAlignment="viewStart"
+                        android:textColor="#ffffff"
+                        android:theme="@style/CKButton2" />
+
+                    <Button
+                        android:id="@+id/buttonUI_D3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/mybutton"
+                        android:padding="10dp"
+                        android:paddingLeft="100dp"
+                        android:text="IDLE"
+                        android:textAlignment="viewStart"
+                        android:textColor="#ffffff"
+                        android:theme="@style/CKButton2" />
+
+                    <Button
+                        android:id="@+id/buttonUI_E5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/mybutton"
+                        android:padding="10dp"
+                        android:paddingLeft="100dp"
+                        android:text="IDLE"
+                        android:textAlignment="viewStart"
+                        android:textColor="#ffffff"
+                        android:theme="@style/CKButton2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonOK"
+                style="@android:style/Widget.Button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="900dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:text="OK"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

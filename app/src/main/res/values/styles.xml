@@ -1,0 +1,43 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+    <style name="CKButton" parent="android:style/Widget.Button">
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_margin">22sp</item>
+        <item name="android:background">#ff0000</item>
+        <item name="android:paddingBottom">22sp</item>
+    </style>
+
+    <style name="CKButton2" parent="android:style/Widget.Button">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="QuestionText" parent="android:style/Widget.Button">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_margin">22sp</item>
+        <item name="android:background">@color/WHITE</item>
+        <item name="android:paddingBottom">22sp</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppThemeWhite" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeWhite.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppThemeWhite.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
